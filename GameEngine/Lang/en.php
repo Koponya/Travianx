@@ -72,6 +72,9 @@ define("NOT_OPENED_YET","Server not started yet.");
 //COPYRIGHT
 define("TRAVIAN_COPYRIGHT","TravianX 100% Open Source Travian Clone.");
 
+//stuff
+define("GOLD_NAME","Gold");
+
 //BUILD.TPL
 define("CUR_PROD","Current production");
 define("NEXT_PROD","Production at level ");
@@ -111,6 +114,7 @@ define("SEVER_TIME","Server time:");
 //QUEST
 define("Q_CONTINUE","Continue with the next task.");
 define("Q_REWARD","Your reward:");
+define("Q_ORDER","Order:");
 define("Q0","Welcome to ");
 define("Q0_DESC","As I see you have been made chieftain of this little village. I will be your counselor for the first few days and never leave your (right hand) side.");
 define("Q0_OPT1","To the first task.");
@@ -119,38 +123,60 @@ define("Q0_OPT3","Play no tasks.");
 
 define("Q1","Task 1: Woodcutter");
 define("Q1_DESC","There are four green forests around your village. Construct a woodcutter on one of them. Lumber is an important resource for our new settlement.");
-define("Q1_ORDER","Order:<\/p>Construct a woodcutter.");
+define("Q1_ORDER","Construct a woodcutter.");
 define("Q1_RESP","Yes, that way you gain more lumber.I helped a bit and completed the order instantly.");
 define("Q1_REWARD","Woodcutter instantly completed.");
 
 define("Q2","Task 2: Crop");
 define("Q2_DESC","Now your subjects are hungry from working all day. Extend a cropland to improve your subjects' supply. Come back here once the building is complete.");
-define("Q2_ORDER","Order:<\/p>Extend one cropland.");
+define("Q2_ORDER","Extend one cropland.");
 define("Q2_RESP","Very good. Now your subjects have enough to eat again...");
 
 define("Q3","Task 3: Your Village's Name");
-define("Q3_DESC","Creative as you are you can grant your village the ultimate name.\r\n<br \/><br \/>\r\nClick on 'profile' in the left hand menu and then select 'change profile'...");
-define("Q3_ORDER","Order:<\/p>Change your village's name to something nice.");
+define("Q3_DESC1","Creative as you are you can grant your village the ultimate name.");
+define("Q3_DESC2","Click on 'profile' in the left hand menu and then select 'change profile'...");
+define("Q3_ORDER","Change your village's name to something nice.");
 define("Q3_RESP","Wow, a great name for their village. It could have been the name of my village!...");
 
 define("Q4","Task 4: Other Players");
 define("Q4_DESC","In ". SERVER_NAME ." you play along with billions of other players. Click 'statistics' in the top menu to look up your rank and enter it here.");
-define("Q4_ORDER","Order:<\/p>Look for your rank in the statistics and enter it here.");
-define("Q4_BUTN","complete task");
+define("Q4_ORDER","Look for your rank in the statistics and enter it here.");
+//define("Q4_BUTN","complete task");
 define("Q4_RESP","Exactly! That's your rank.");
 
 define("Q5","Task 5: Two Building Orders");
 define("Q5_DESC","Build an iron mine and a clay pit. Of iron and clay one can never have enough.");
-define("Q5_ORDER","Order:<\/p><ul><li>Extend one iron mine.<\/li><li>Extend one clay pit.<\/li><\/ul>");
-define("Q5_RESP","As you noticed, building orders take rather long. The world of ". SERVER_NAME ." will continue to spin even if you are offline. Even in a few months there will be many new things for you to discover.\r\n<br \/><br \/>\r\nThe best thing to do is occasionally checking your village and giving you subjects new tasks to do.");
+define("Q5_ORDER","<ul><li>Extend one iron mine.<\/li><li>Extend one clay pit.<\/li><\/ul>");
+define("Q5_RESP","As you noticed, building orders take rather long. The world of ". SERVER_NAME ." will continue to spin even if you are offline. Even in a few months there will be many new things for you to discover.");
+define("Q5_RESP2","The best thing to do is occasionally checking your village and giving you subjects new tasks to do.");
 
-define("Q6","Message From The Taskmaster");
-define("Q6_DESC","You are to be informed that a nice reward is waiting for you at the taskmaster.<br /><br />Hint: The message has been generated automatically. An answer is not necessary.");
+define("Q6","Task 6: Messages");
+define("Q6_DESC1","You can talk to other players using the messaging system. I sent a message to you. Read it and come back here.");
+define("Q6_DESC2","P.S. Don't forget: on the left the reports, on the right the messages.");
+define("Q6_ORDER","Read your new message.");
+define("Q6_RESP1","You received it? Very good.");
+define("Q6_RESP2","Here is some Gold. With Gold you can do several things, e.g. extend your <b><font color=\"#71D000\">P<\/font><font color=\"#FF6F0F\">l<\/font><font color=\"#71D000\">u<\/font><font color=\"#FF6F0F\">s<\/font><\/b>-Account or increase your resource production.To do so click <a href=\"plus.php?id=3\"><font color=\"#000000\"><?php echo SERVER_NAME; ?><\/font> <b><font color=\"#71D000\">P<\/font><font color=\"#FF6F0F\">l<\/font><font color=\"#71D000\">u<\/font><font color=\"#FF6F0F\">s<\/font><\/b><\/a> in the left hand menu.");
 
-define("Q5","Task 5: Two Building Orders");
-define("Q5_DESC","Build an iron mine and a clay pit. Of iron and clay one can never have enough.");
-define("Q5_ORDER","Order:<\/p><ul><li>Extend one iron mine.<\/li><li>Extend one clay pit.<\/li><\/ul>");
-define("Q5_RESP","As you noticed, building orders take rather long. The world of ". SERVER_NAME ." will continue to spin even if you are offline. Even in a few months there will be many new things for you to discover.\r\n<br \/><br \/>\r\nThe best thing to do is occasionally checking your village and giving you subjects new tasks to do.");
+define("Q7","Task 7: Huge Army!");
+define("Q7_DISC1","Now I've got a very special quest for you. I am hungry. Give me 200 crop!");
+define("Q7_DISC2","In return I will try to organize a huge army to protect your village.");
+define("Q7_ORDER","Send 200 crop to the taskmaster.");
+define("Q7_OPT1","Send crop.");
+
+define("Q8","Task 8: Everything to 1.");
+define("Q8_DISC","Now we should increase your resource production a bit. Extend all your resource tiles to level 1.");
+define("Q8_ORDER","Extend all resource tiles to level 1.");
+define("Q8_RESP1","Very good, your resource production just thrives.");
+define("Q8_RESP2","Soon we can start with constructing buildings in the village.");
+
+define("Q9","Task 9: Dove of Peace");
+define("Q9_DISC","The first days after signing up you are protected against attacks by your fellow players. You can see how long this protection lasts by adding the code <b>[#0]<\/b> to your profile.");
+define("Q9_ORDER","Write the code <b>[#0]<\/b> into your profile by adding it to one of the two description fields.");
+define("Q9_RESP","Well done! Now everyone can see what a great warrior the world is approached by.");
+
+define("Q10","Task 10: Cranny");
+
+
 
 //======================================================//
 //================ UNITS - DO NOT EDIT! ================//
