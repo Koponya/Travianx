@@ -34,23 +34,27 @@ div.c1 {text-align: center}
 
     <div id="side_navi">
         <a id="logo" href="<?php echo HOMEPAGE; ?>" name="logo"><img src="img/x.gif" <?php if($session->plus) { echo "class=\"logo_plus\""; } ?> alt="Travian"></a>
-
-
-        <p><a href="<?php echo HOMEPAGE; ?>"><?php echo HOME; ?></a> <a href="spieler.php?uid=<?php echo $session->uid; ?>"><?php echo PROFILE; ?></a> <a href="#" onclick="return Popup(0,0,1);"><?php echo INSTRUCT; ?></a> <?php if($session->access == MULTIHUNTER) {
-
-                    echo "<a href=\"Admin/admin.php\"><font color=\"Blue\">Multihunter Panel</font></a>";
-                    } ?> <?php if($session->access == ADMIN) {
-                    echo "<a href=\"Admin/admin.php\"><font color=\"Red\">Admin Panel</font></a>";
-                    echo "<a href=\"massmessage.php\">Mass Message</a>";
-                    echo "<a href=\"medals.php\">Update Top 10</a>";
-                    echo "<a href=\"sysmsg.php\">System message</a>";
-                    } ?> <a href="logout.php"><?php echo LOGOUT; ?></a></p>
-
-        <p><a href="#">Forum</a></p>
-
-        <p><a href="plus.php?id=3">Travian <b><span class="plus_g">P</span><span class="plus_o">l</span><span class="plus_g">u</span><span class="plus_o">s</span></b></a>
-                    <a href="spieler.php?uid=0"><b>Support</b></a> 
-        <br></p>
+		
+		<a href="<?php echo HOMEPAGE; ?>"><?php echo HOME; ?></a><br />
+		<a href="spieler.php?uid=<?php echo $session->uid; ?>"><?php echo PROFILE; ?></a><br />
+		<a href="#" onclick="return Popup(0,0,1);"><?php echo INSTRUCT; ?></a><br />
+		<?php 
+			if($session->access == MULTIHUNTER) 
+			{
+				echo "<a href=\"Admin/admin.php\"><font color=\"Blue\">".MULTIHUNTER_PANEL."</font></a>";
+			} 
+			if($session->access == ADMIN) 
+			{
+				echo "<a href=\"Admin/admin.php\"><font color=\"Red\">".ADMIN_PANEL."</font></a>";
+				echo "<a href=\"massmessage.php\">".MASS_MESSAGE."</a>";
+				echo "<a href=\"medals.php\">".UPDATE_T_10."</a>";
+				echo "<a href=\"sysmsg.php\">".SYSTEM_MESSAGE."</a>";
+			} 
+		?>
+		<a href="#"><? echo FORUM; ?></a><br />
+        <a href="plus.php?id=3"><? echo TRAVIAN_PLUS; ?></a><br />
+        <a href="spieler.php?uid=0"><b>Support</b></a><br />
+		<a href="logout.php"><?php echo LOGOUT; ?></a><br />
     </div><?php
     if($_SESSION['ok']=='1'){
     ?>

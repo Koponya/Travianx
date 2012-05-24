@@ -10,6 +10,7 @@
                                     //                         //
 									//         ENGLISH         //
 			                        //      Author: Dzoki      //
+			                        //      Author: Koponya    //
 									/////////////////////////////
 
 //MAIN MENU
@@ -20,21 +21,21 @@ define("TRIBE4","Nature");
 define("TRIBE5","Natars");
 define("TRIBE6","Monsters");
  
+//MENU
 define("HOME","Homepage"); 
+define("PROFILE","Profile");
 define("INSTRUCT","Instructions");
+define("MULTIHUNTER_PANEL","Multihunter Panel");
 define("ADMIN_PANEL","Admin Panel");
 define("MASS_MESSAGE","Mass Message");
-define("LOGOUT","Logout");
-define("PROFILE","Profile");
-define("SUPPORT","Support");
 define("UPDATE_T_10","Update Top 10");
 define("SYSTEM_MESSAGE","System message");
-define("TRAVIAN_PLUS","Travian <b><span class=\"plus_g\">P</span><span class=\"plus_o\">l</span><span class=\"plus_g\">u</span><span class=\"plus_o\">s</span></span></span></b>");
-define("CONTACT","Contact us!");
-
-//MENU
-define("REG","Register");
 define("FORUM","Forum");
+define("TRAVIAN_PLUS","Travian <b><span class=\"plus_g\">P</span><span class=\"plus_o\">l</span><span class=\"plus_g\">u</span><span class=\"plus_o\">s</span></span></span></b>");
+//define("CONTACT","Contact us!");
+define("SUPPORT","Support");
+define("LOGOUT","Logout");
+define("REG","Register");
 define("CHAT","Chat");
 define("IMPRINT","Imprint");
 define("MORE_LINKS","More Links");
@@ -112,9 +113,14 @@ define("CALCULATED_IN","Calculated in");
 define("SEVER_TIME","Server time:");  
 
 //QUEST
+define("Q_MSG_SUBJECT", "Message From The Taskmaster");
+define("Q_MSG_MESSAGE", "You are to be informed that a nice reward is waiting for you at the taskmaster.<br /><br />Hint: The message has been generated automatically. An answer is not necessary.");
 define("Q_CONTINUE","Continue with the next task.");
 define("Q_REWARD","Your reward:");
 define("Q_ORDER","Order:");
+define("Q_ACHIEVED","All tasks achieved!");
+define("Q_SKIPED","Tasks skpiped");
+define("Q_TASKS","Tasks");
 define("Q0","Welcome to ");
 define("Q0_DESC","As I see you have been made chieftain of this little village. I will be your counselor for the first few days and never leave your (right hand) side.");
 define("Q0_OPT1","To the first task.");
@@ -175,6 +181,78 @@ define("Q9_ORDER","Write the code <b>[#0]<\/b> into your profile by adding it to
 define("Q9_RESP","Well done! Now everyone can see what a great warrior the world is approached by.");
 
 define("Q10","Task 10: Cranny");
+define("Q10_DESC1","It's getting time to erect a cranny. The world of ".SERVER_NAME." is dangerous.");
+define("Q10_DESC2","Many players live by stealing other players' resources. Build a cranny to hide some of your resources from enemies.");
+define("Q10_ORDER","Construct a Cranny.");
+define("Q10_RESP1","Well done, now it's way harder for your mean fellow players to plunder your village.");
+define("Q10_RESP2","If under attack, your villagers will hide the resources in the Cranny all on their own.");
+
+define("Q11","Task 11: To Two.");
+define("Q11_DESC","In ".SERVER_NAME." there is always something to do! Extend one woodcutter, one clay pit, one iron mine and one cropland to level 2 each.");
+define("Q11_ORDER","Extend one of each resource tile to level 2.");
+define("Q11_RESP","Very good, your village grows and thrives!");
+
+define("Q12","Task 12: Instructions");
+define("Q12_DESC1","In the ingame instructions you can find short information texts about different buildings and types of units.");
+define("Q12_DESC2","Click on 'instructions' at the left to find out how much lumber is required for the barracks.");
+define("Q12_ORDER","Enter how much lumber barracks cost");
+define("Q12_RESP","Exactly! Barracks cost 210 lumber.");
+
+define("Q13","Task 13: Main Building");
+define("Q13_DESC","Your master builders need a main building level 3 to erect important buildings such as the marketplace or barracks.");
+define("Q13_ORDER","Extend your main building to level 3.");
+define("Q13_RESP1","Well done. The main building level 3 has been completed.");
+define("Q13_RESP2","With this upgrade your master builders cannot only construct more types of buildings but also do so faster.");
+
+define("Q14","Task 14: Advanced!");
+define("Q14_DESC","Look up your rank in the player statistics again and enjoy your progress.");
+define("Q14_ORDER","Look for your rank in the statistics and enter it here.");
+define("Q14_RESP","Well done! That's your current rank.");
+
+define("Q15","Task 16: Weapons or Dough");
+define("Q15_DESC1","Now you have to make a decision: Either trade peacefully or become a dreaded warrior.");
+define("Q15_DESC2","For the marketplace you need a granary, for the barracks you need a rally point.");
+define("Q15_OPT1","Economy");
+define("Q15_OPT2","Military");
+
+define("Q16","Task 16: Military");
+define("Q16_DESC1","A brave decision. To be able to send troops you need a rally point.");
+define("Q16_DESC2","The rally point must be built on a specific building site. The <a href=\"build.php?id=39\">building site<\/a> is located on the right side of the main building, slightly below it. The building site itself is curved.");
+define("Q16_ORDER","Construct a rally point.");
+define("Q16_RESP","Your rally point has been erected! A good move towards world domination!");
+
+define("Q17","Task 17: Barracks");
+define("Q17_DESC1","Now you have a main building level 3 and a rally point. That means that all prerequisites for building barracks have been fulfilled.");
+define("Q17_DESC2","You can use the barracks to train troops for fighting.");
+define("Q17_ORDER","Construct barracks.");
+define("Q17_RESP","Well done... The best instructors from the whole country have gathered to train your men\u2019s fighting skills to top form.");
+
+define("Q18","Task 18: Train.");
+define("Q18_DESC","Now that you have barracks you can start training troops. Train two ");//...
+define("Q18_ORDER","Please train 2 ");
+define("Q18_RESP1","The foundation for your glorious army has been laid.");
+define("Q18_RESP2","Before sending your army off to plunder you should check with the <a href=\"warsim.php\">Combat-Simulator<\/a> to see how many troops you need to successfully fight one rat without losses.");
+
+define("Q19","Task 16: Economy");
+define("Q19_DESC","Trade & Economy was your choice. Golden times await you for sure!");
+define("Q19_ORDER","Construct a Granary.");
+define("Q19_RESP","Well done! With the Granary you can store more wheat.");
+
+define("Q20","Task 17: Warehouse");
+define("Q20_DESC","Not only Crop has to be saved. Other resources can go to waste as well if they are not stored correctly. Construct a Warehouse!");
+define("Q20_ORDER","Construct Warehouse.");
+define("Q20_RESP1","Well done, your Warehouse is complete...");
+define("Q20_RESP2","Now you have fulfilled all prerequisites required to construct a Marketplace.");
+
+define("Q21","Task 18: Marketplace.");
+define("Q21_DESC","Construct a Marketplace so you can trade with your fellow players.");
+define("Q21_ORDER","Please build a Marketplace.");
+define("Q21_RESP","The Marketplace has been completed. Now you can make offers of your own and accept foreign offers! When creating your own offers, you should think about offering what other players need most to get more profit.");
+
+define("Q22","Task 19: Everything to 2.");
+define("Q22_DESC","Now it's time again to extend the cornerstones of might and wealth! This time level 1 is not enough... it will take a while but in the end it will be worth it. Extend all your resource tiles to level 2!");
+define("Q22_ORDER","Extend all resource tiles to level 2.");
+define("Q22_RESP","Congratulations! Your village grows and thrives...");
 
 
 
